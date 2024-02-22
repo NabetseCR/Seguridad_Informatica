@@ -1,0 +1,31 @@
+-----------------------------------
+Profesor
+Henry Guevara
+henry.guevara.guevara@una.ac.cr
+83467612
+-----------------------------------
+nslookup then the dir web to get the IP
+-----------------------------------
+ping -1 15000 [ipaddress]
+-----------------------------------
+reverse ARP
+
+arp -a: check the mac address local
+-----------------------------------
+Carta estudiante
+
+Fechas Importantes:
+
+
+
+Porcentajes:
+
+examen 15%
+examen 15%
+tareas cortas 20%
+labs 30%
+proyecto 20%
+
+
+
+
