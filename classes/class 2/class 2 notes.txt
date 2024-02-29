@@ -1,1 +1,22 @@
 2/28/24
+----------------------
+
+IPs PRIVADAS
+10.0.0.0
+172.17.x.x
+192.168.x.x
+
+
+
+---------------------------
+
+Lab 1
+
+1 nslookup
+2 ipconfig
+
+Buscar pagina web
+
+ver direcciones, rutas
+
+----------------------------
