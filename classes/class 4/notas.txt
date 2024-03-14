@@ -1,1 +1,19 @@
 03/13/24
+
+IPS = Previene
+IDS = Detecta
+
+DMZ
+
+Firewall tiene 3 tipos de puertos DMZ, OUT, IN
+
+Se busca que trafico OUT y el IN no se puedan comunicar
+
+
+Formas de firewall One Arm (solo recibe)
+
+O recibe y traduce la informacion (traslate)
+
+
+Matriz de riesgos
+vamos haciendo matriz y dar soluciones respectivas
