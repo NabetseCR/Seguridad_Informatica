@@ -1,0 +1,102 @@
+03/20/2024
+
+Ver leccion anterior topologia
+----------------
+Switch 0
+----------------
+ena
+conf t
+int fa0/1
+switchport access vlan 10
+exit
+int fa0/2
+switchport access vlan 10
+exit
+int fa0/3
+switchport access vlan 20
+exit
+int fa0/4
+switchport access vlan 20
+exit
+int g0/1
+switchport access vlan 10
+exit
+int g0/2
+switchport access vlan 20
+----------------
+Switch 1
+-----------------
+ena
+conf t
+int fa0/1
+switchport access vlan 40
+exit
+int fa0/2
+switchport access vlan 40
+exit
+int fa0/3
+switchport access vlan 50
+exit
+int fa0/4
+switchport access vlan 50
+exit
+int g0/1
+switchport mode trunk
+switchport trunk allowed vlan 40,50
+do wr
+----------------
+Router 0
+-----------------
+ena
+conf t
+int g0/1
+ip add 192.168.1.254 255.255.255.0
+no shut
+exit
+int g0/2
+ip add 192.168.2.254 255.255.255.0
+no shut
+exit
+int g0/0
+ip add 10.0.0.1 255.255.255.252
+no shut
+exit
+router eigrp 10
+network 192.168.1.0 0.0.0.255
+network 192.168.2.0 0.0.0.255
+network 10.0.0.0 0.0.0.3
+end
+do wr
+----------------
+Router 1
+-------------------
+ena
+conf t
+int g0/1.40
+encapsulation dot1Q 40
+ip add 192.168.4.254 255.255.255.0
+exit
+int g0/1.50
+encapsulation dot1Q 50
+ip add 192.168.5.254 255.255.255.0
+exit
+int g0/1
+ip add 10.0.0.2 255.255.255.252
+no shut
+exit
+router eigrp 10
+network 192.168.4.0 0.0.0.255
+network 192.168.5.0 0.0.0.255
+network 10.0.0.0 0.0.0.3
+end
+do wr
+
+
+
+
+
+show commands
+switch
+show ip int bri
+
+router
