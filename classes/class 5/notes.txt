@@ -99,4 +99,16 @@ show commands
 switch
 show ip int bri
 
+switches
+show mac address-table
+
+
+int fa0/2
+switchport port-security mac-address sticky
+
+ipconfig /all
+switchport port-security violation shutdown
+switchport port-security mac-address 
+
+
 router
