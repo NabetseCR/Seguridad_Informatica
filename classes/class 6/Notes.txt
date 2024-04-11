@@ -1,0 +1,33 @@
+Integridad: Solo personas autorizadas puede ser modificado
+
+Confidencialidad: Solo personas autorizadas puede ser leido
+
+Disponibilidad: Informacion siempre disponible.
+
+Irrefutabilidad: Nadie puede poner en duda que la informacion no es de mi posecion
+
+Balanceador de carga
+
+Hypervisor VMware estos 2 nos dan alta disponibilidad.
+
+
+--------------------------------------------------------
+--------------------------------------------------------
+
+
+Objetivos seguridad informatica
+
+Proteger activos, planes de emergencia, proteger informacion.
+
+Observaciones:
+
+-> SOC y NOC como monitoreo
+
+-> Syslog para logs
+
+-> IPs publicas
+
+
+Proteccion en centros de computo
+
+
