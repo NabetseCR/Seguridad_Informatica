@@ -11,3 +11,52 @@ Miercoles 1ero de mayo debe estar listo
 -----------------------
 
 Primera exposicion 24 abril -> Documento para ese mismo dia
+
+8 de mayo, examen I 6 pm
+
+---
+Switch 0
+---
+ena
+conf t
+int fa0/1
+switchport port-security violation shutdown
+switchport port-security mac-address 000B.BE24.1C97
+int fa0/2
+switchport port-security violation shutdown
+switchport port-security mac-address 0001.9766.4C86
+do wr
+
+---
+Router1
+---
+ena
+conf t
+int g0/0
+ip add 10.0.0.1 255.255.255.0
+no shut
+int g0/1
+ip add 192.168.0.1 255.255.255.0
+no shut
+router eigrp 10
+network 10.0.0.0 0.0.0.255
+network 192.168.0.0 0.0.0.255
+end
+do wr
+
+---
+Router1
+---
+ena
+conf t
+int g0/1
+ip add 11.0.0.1 255.255.255.0
+no shut
+int g0/0
+ip add 192.168.0.2 255.255.255.0
+no shut
+router eigrp 10
+network 11.0.0.0 0.0.0.255
+network 192.168.0.0 0.0.0.255
+end
+do wr
