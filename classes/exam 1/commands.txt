@@ -1,0 +1,15 @@
+show crypto ip sec
+
+1. con cedula de uno buscar las redes que me dieron para parte izquierda, derecha interna
+
+2. se debe entregar comando ipconfig -all
+subir pkt y capturas
+
+3. quemar mac address en los switchs (pkt pregunta # 2)
+
+201.195.246.8
+
+<b>User Credentials (username/password): </b>user1/user1<br />
+	<b>User Credentials (username/password): </b>user2/user2<br />
+	<b>Admin Credentials (username/password): </b>admin/admin<br />
+	<b>Link: </b><a href="http://www.orangehrm.org/">home page</a><br /

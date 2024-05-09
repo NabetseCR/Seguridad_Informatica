@@ -1,0 +1,8 @@
+4/24/2024
+-------------------------------------------------
+
+Certificados se utilizanm para realizar comunicacion entre dispositivos de una red.
+
+AAA access control => es quien se esncarga de autheticar usuarios.
+
+
